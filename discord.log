@@ -1,0 +1,73 @@
+2021-07-16 17:18:51,372:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2021-07-16 17:18:51,372:DEBUG:discord.client: on_ready has successfully been registered as an event
+2021-07-16 17:18:51,372:DEBUG:discord.client: on_message has successfully been registered as an event
+2021-07-16 17:18:51,372:DEBUG:discord.client: on_member_join has successfully been registered as an event
+2021-07-16 17:18:51,372:INFO:discord.client: logging in using static token
+2021-07-16 17:18:55,688:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me with None has returned 200
+2021-07-16 17:18:55,688:DEBUG:discord.http: GET https://discord.com/api/v7/users/@me has received {'id': '863816577111293952', 'username': 'MethanolBot', 'avatar': '7eb3b51697037d961dcdd2e5b4cdca55', 'discriminator': '3138', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'bio': '', 'locale': 'en-US', 'mfa_enabled': True, 'email': None, 'verified': True}
+2021-07-16 17:18:55,718:DEBUG:discord.http: GET https://discord.com/api/v7/gateway with None has returned 200
+2021-07-16 17:18:55,718:DEBUG:discord.http: GET https://discord.com/api/v7/gateway has received {'url': 'wss://gateway.discord.gg'}
+2021-07-16 17:18:56,003:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2021-07-16 17:18:56,003:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:18:56,003:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-29gx",{"micros":0.0}]']}}
+2021-07-16 17:18:56,003:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:18:56,003:DEBUG:discord.client: Dispatching event socket_raw_send
+2021-07-16 17:18:56,003:DEBUG:discord.client: Dispatching event socket_raw_send
+2021-07-16 17:18:56,003:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2021-07-16 17:18:56,173:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:18:56,173:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:18:56,173:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:18:56,324:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:18:56,324:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 6, 'user_settings': {}, 'user': {'verified': True, 'username': 'MethanolBot', 'mfa_enabled': True, 'id': '863816577111293952', 'flags': 0, 'email': None, 'discriminator': '3138', 'bot': True, 'avatar': '7eb3b51697037d961dcdd2e5b4cdca55'}, 'session_id': '01d2aa4a51160f91370a85cbc035a976', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '863783912459206657'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['russia', 'europe', 'india', 'hongkong', 'us-east'], 'application': {'id': '863816577111293952', 'flags': 262144}, '_trace': ['["gateway-prd-main-29gx",{"micros":162426,"calls":["discord-sessions-green-prd-2-53",{"micros":161288,"calls":["start_session",{"micros":112578,"calls":["api-prd-main-5rlv",{"micros":108602,"calls":["get_user",{"micros":8540},"add_authorized_ip",{"micros":16398},"get_guilds",{"micros":21946},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":24446,"calls":[]}]}]}]']}}
+2021-07-16 17:18:56,324:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:18:56,324:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-29gx",{"micros":162426,"calls":["discord-sessions-green-prd-2-53",{"micros":161288,"calls":["start_session",{"micros":112578,"calls":["api-prd-main-5rlv",{"micros":108602,"calls":["get_user",{"micros":8540},"add_authorized_ip",{"micros":16398},"get_guilds",{"micros":21946},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":24446,"calls":[]}]}]}] (Session ID: 01d2aa4a51160f91370a85cbc035a976).
+2021-07-16 17:18:56,324:DEBUG:discord.client: Dispatching event connect
+2021-07-16 17:18:56,340:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:18:56,340:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'system_channel_flags': 0, 'region': 'russia', 'lazy': True, 'name': 'testbot', 'verification_level': 2, 'afk_channel_id': None, 'description': None, 'application_id': None, 'nsfw_level': 0, 'default_message_notifications': 0, 'max_video_channel_users': 25, 'members': [{'user': {'username': 'MethanolBot', 'id': '863816577111293952', 'discriminator': '3138', 'bot': True, 'avatar': '7eb3b51697037d961dcdd2e5b4cdca55'}, 'roles': ['863848621342326785'], 'mute': False, 'joined_at': '2021-07-11T18:26:00.889000+00:00', 'hoisted_role': None, 'deaf': False}], 'discovery_splash': None, 'premium_subscription_count': 0, 'explicit_content_filter': 0, 'premium_tier': 0, 'emojis': [], 'joined_at': '2021-07-11T18:26:00.889000+00:00', 'channels': [{'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Текстовые каналы', 'id': '863783913121251338'}, {'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Голосовые каналы', 'id': '863783913121251339'}, {'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '863783913121251338', 'name': 'писульки', 'last_message_id': '865598044816801823', 'id': '863783913121251341'}, {'user_limit': 0, 'type': 2, 'rtc_region': None, 'position': 0, 'permission_overwrites': [], 'parent_id': '863783913121251339', 'name': 'Основной', 'id': '863783913121251342', 'bitrate': 64000}], 'preferred_locale': 'en-US', 'icon': 'cf7f060206edd8d7d09b63dcfc2dfbc8', 'large': False, 'mfa_level': 0, 'banner': None, 'rules_channel_id': None, 'features': [], 'roles': [{'position': 0, 'permissions_new': '109625986625', 'permissions': 104320577, 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '863783912459206657', 'hoist': False, 'color': 0}, {'position': 2, 'permissions_new': '110699728449', 'permissions': 1178062401, 'name': 'admin', 'mentionable': False, 'managed': False, 'id': '863796990260805653', 'hoist': False, 'color': 15277667}, {'position': 1, 'permissions_new': '109625986625', 'permissions': 104320577, 'name': 'Bagdalord', 'mentionable': False, 'managed': False, 'id': '863797603993255966', 'hoist': False, 'color': 1752220}, {'tags': {'bot_id': '863816577111293952'}, 'position': 1, 'permissions_new': '8', 'permissions': 8, 'name': 'MethanolBot', 'mentionable': False, 'managed': True, 'id': '863848621342326785', 'hoist': False, 'color': 0}], 'afk_timeout': 300, 'threads': [], 'application_command_count': 0, 'stage_instances': [], 'unavailable': False, 'system_channel_id': '863783913121251341', 'max_members': 100000, 'stickers': [], 'owner_id': '623764827508178946', 'id': '863783912459206657', 'vanity_url_code': None, 'splash': None, 'nsfw': False, 'voice_states': [], 'member_count': 3, 'presences': [], 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': '1RURUonekBo'}, 'metadata': {'omitted': False, 'hash': 'mi0oYkNjFIw'}, 'channels': {'omitted': False, 'hash': 'A0COgry5gbU'}}, 'public_updates_channel_id': None}}
+2021-07-16 17:18:56,340:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:18:56,340:DEBUG:discord.client: Dispatching event guild_available
+2021-07-16 17:18:58,355:DEBUG:discord.client: Dispatching event ready
+2021-07-16 17:19:06,905:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:19:06,905:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 3, 'op': 0, 'd': {'user_id': '623764827508178946', 'timestamp': 1626445147, 'member': {'user': {'username': 'methanol', 'id': '623764827508178946', 'discriminator': '9725', 'avatar': '0b636f580565b969aa4e424a71fe366d'}, 'roles': ['863796990260805653'], 'mute': False, 'joined_at': '2021-07-11T14:08:53.197000+00:00', 'hoisted_role': None, 'deaf': False}, 'channel_id': '863783913121251341', 'guild_id': '863783912459206657'}}
+2021-07-16 17:19:06,905:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:19:06,905:DEBUG:discord.client: Dispatching event typing
+2021-07-16 17:19:06,905:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:19:06,905:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2021-07-16T14:19:07.476000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '865598421602402304', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['863796990260805653'], 'mute': False, 'joined_at': '2021-07-11T14:08:53.197000+00:00', 'hoisted_role': None, 'deaf': False}, 'id': '865598428837969941', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '$clear', 'components': [], 'channel_id': '863783913121251341', 'author': {'username': 'methanol', 'public_flags': 0, 'id': '623764827508178946', 'discriminator': '9725', 'avatar': '0b636f580565b969aa4e424a71fe366d'}, 'attachments': [], 'guild_id': '863783912459206657'}}
+2021-07-16 17:19:06,905:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:19:06,905:DEBUG:discord.client: Dispatching event message
+2021-07-16 17:19:37,261:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-07-16 17:19:38,397:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:19:38,397:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:19:38,397:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:20:18,525:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-07-16 17:20:19,798:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:20:19,798:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:20:19,798:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:20:59,794:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-07-16 17:21:00,111:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:21:00,111:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:21:00,111:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:21:41,055:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-07-16 17:21:41,209:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:21:41,209:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:21:41,209:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:22:22,313:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-07-16 17:22:22,629:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:22:22,629:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:22:22,629:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:23:03,566:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-07-16 17:23:03,720:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:23:03,720:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:23:03,720:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:23:44,821:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-07-16 17:23:45,106:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:23:45,106:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:23:45,106:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:24:26,081:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-07-16 17:24:26,366:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:24:26,366:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:24:26,366:DEBUG:discord.client: Dispatching event socket_response
+2021-07-16 17:25:07,336:DEBUG:discord.gateway: Keeping shard ID None websocket alive with sequence 4.
+2021-07-16 17:25:07,489:DEBUG:discord.client: Dispatching event socket_raw_receive
+2021-07-16 17:25:07,489:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2021-07-16 17:25:07,489:DEBUG:discord.client: Dispatching event socket_response

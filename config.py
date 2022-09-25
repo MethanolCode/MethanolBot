@@ -143,4 +143,4 @@ async def site(ctx):
     await ctx.send(link)
 
 
-client.run('ODYzODE2NTc3MTExMjkzOTUy.YOsZ4A.U5vcrzn-tI48IYBFkZ87pGF8990')
+client.run('')
